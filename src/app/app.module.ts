@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { IconsComponent } from './components/icons/icons.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { VendidosComponent } from './components/vendidos/vendidos.component';
+import { MenuPopularComponent } from './components/menu-popular/menu-popular.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +16,11 @@ import { VendidosComponent } from './components/vendidos/vendidos.component';
     HomeComponent,
     IconsComponent,
     CardsComponent,
-    VendidosComponent
+    VendidosComponent,
+    MenuPopularComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

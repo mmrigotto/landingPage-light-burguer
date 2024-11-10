@@ -1,7 +1,7 @@
 
 header{
     padding: 2% ;
-    border-bottom: 1.5px solid #EFEFEF;
+    border-bottom: 5px solid #EFEFEF;
     height: 2.1%;
     position: sticky;
     top: 0;
@@ -12,11 +12,11 @@ header{
 ul{
     display: flex;
     flex-direction: row;
-    gap: 40px; 
+    gap: 40px;
     justify-content:  flex-end;
     color: #FDD741;
     font-weight:500;
-    font-size:16px;
+    font-size:18px;
 }
 li{
     list-style: none;
