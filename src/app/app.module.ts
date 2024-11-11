@@ -8,6 +8,8 @@ import { IconsComponent } from './components/icons/icons.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { VendidosComponent } from './components/vendidos/vendidos.component';
 import { MenuPopularComponent } from './components/menu-popular/menu-popular.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { ItensMenuComponent } from './components/itens-menu/itens-menu.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { MenuPopularComponent } from './components/menu-popular/menu-popular.com
     IconsComponent,
     CardsComponent,
     VendidosComponent,
-    MenuPopularComponent
+    MenuPopularComponent,
+    CarouselComponent,
+    ItensMenuComponent
   ],
   imports: [
     BrowserModule,

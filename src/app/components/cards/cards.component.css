@@ -1,13 +1,14 @@
-.full-card{
+.full-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 300px; /* Ajuste a largura do card para caber melhor */
+  height: 470px;
   gap: 8px;
 }
 
-.image-card{
+.image-card {
   background-color: #FDD741;
   border-radius: 24px;
   height: 250px;
@@ -18,11 +19,11 @@
 }
 
 .photo-card {
-  width: auto; /* Permite que a largura ajuste-se automaticamente */
-  height: 100%; /* Faz com que a imagem ocupe toda a altura do contêiner */
-  max-width: 100%; /* Evita que a imagem ultrapasse o contêiner */
-  max-height: 200px; /* Ajuste conforme a altura desejada */
-  object-fit: cover; /* Garante que a imagem preencha o contêiner mantendo a proporção */
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
 }
 
 .text-card{

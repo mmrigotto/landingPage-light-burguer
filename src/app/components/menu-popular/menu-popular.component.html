@@ -1,45 +1,15 @@
 <div class="menu-popular">
-  <div class="titles-menu">
-    <h1 class="sub-title">Deliciosas escolhas</h1>
-    <h1 class="main-title">MENU POPULAR</h1>
-  </div>
-  <div class="icons-menu">
-    <img src="../../../assets/hamburguer-icon.svg" alt="">
-    <img src="../../../assets/Bebidas.svg" alt="">
-    <img src="../../../assets/Acompanhamentos.svg" alt="">
-    <img src="../../../assets/Sobremesa.svg" alt="">
-  </div>
-  <div class="itens-menu">
-    <div class="column-itens">
-      <div class="container-item">
-        <img src="" alt="" class="icon-burger">
-        <div class="content-burger">
-          <h1 class="title-burger"></h1>
-          <p class="desc-burger"></p>
-        </div>
-        <div class="container-item">
-          <img src="" alt="" class="icon-burger">
-          <div class="content-burger">
-            <h1 class="title-burger"></h1>
-            <p class="desc-burger"></p>
-          </div>
-      </div>
+  <div class="header-menu">
+    <div class="titles-menu">
+      <h1 class="sub-title">Deliciosas escolhas</h1>
+      <h1 class="main-title">MENU POPULAR</h1>
     </div>
-    <div class="column-itens">
-      <div class="container-item">
-        <img src="" alt="" class="icon-burger">
-        <div class="content-burger">
-          <h1 class="title-burger"></h1>
-          <p class="desc-burger"></p>
-        </div>
-        <div class="container-item">
-          <img src="" alt="" class="icon-burger">
-          <div class="content-burger">
-            <h1 class="title-burger"></h1>
-            <p class="desc-burger"></p>
-          </div>
-      </div>
-    </div>
+    <div class="icons-menu">
+      <button (click)="selectList('burguer')"><img *ngIf="isSelectedBurguer" class="icons-img" src="../../../assets/burguer-selecionado.svg" alt=""><img class="icons-img" *ngIf="!isSelectedBurguer" src="../../../assets/hamburguer-icon.svg" alt="" srcset=""></button>
+      <button (click)="selectList('bebidas')"><img class="icons-img" *ngIf="isSelectedSoda"  src="../../../assets/Bebidas-sec.svg" alt=""><img class="icons-img" *ngIf="!isSelectedSoda"  src="../../../assets/Bebidas.svg" alt=""></button>
+      <button (click)="selectList('acompanhamentos')"><img class="icons-img" *ngIf="isSelectedFries" src="../../../assets/Acompanhamentos-sec.svg" alt=""><img class="icons-img" *ngIf="!isSelectedFries" src="../../../assets/Acompanhamentos.svg" alt=""></button>
+      <button (click)="selectList('sobremesas')"><img class="icons-img" *ngIf="isSelectedIce" src="../../../assets/Sobremesa-sec.svg" alt=""><img class="icons-img" *ngIf="!isSelectedIce" src="../../../assets/Sobremesa.svg" alt=""></button>
     </div>
   </div>
+    <app-itens-menu [typeList]="typeList"></app-itens-menu>
 </div>
