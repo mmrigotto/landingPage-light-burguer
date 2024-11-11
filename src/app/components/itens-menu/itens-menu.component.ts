@@ -9,6 +9,8 @@ export class ItensMenuComponent {
  list:{ nome: string; descricao: string; preco: number; img: string; }[] = []
  @Input() typeList!: string
 
+   
+
  ngOnChanges(changes: SimpleChanges) {
   if (changes['typeList']) {
     this.updateList(changes['typeList'].currentValue);
@@ -50,7 +52,7 @@ export class ItensMenuComponent {
 
         preco: 16.00,
 
-        img: "https://d3sn2rlrwxy0ce.cloudfront.net/Chicken-Jr.png?mtime=20230703115830&focal=none"
+        img: "../../../assets/Chicken-Jr-removebg-preview.png"
 
       },
 
