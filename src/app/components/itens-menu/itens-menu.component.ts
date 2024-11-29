@@ -1,4 +1,6 @@
-import { Component, Input, SimpleChanges } from '@angular/core';
+import { Overlay, OverlayConfig } from '@angular/cdk/overlay';
+import { CdkPortal } from '@angular/cdk/portal';
+import { Component, Input, SimpleChanges, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-itens-menu',
@@ -6,16 +8,30 @@ import { Component, Input, SimpleChanges } from '@angular/core';
   styleUrls: ['./itens-menu.component.css']
 })
 export class ItensMenuComponent {
- list:{ nome: string; descricao: string; preco: number; img: string; }[] = []
- @Input() typeList!: string
+  list:{ nome: string; descricao: string; preco: number; img: string; }[] = []
+  @Input() typeList!: string
+  @ViewChild(CdkPortal) portal!: CdkPortal
+  selectedItem: any;
+  constructor(private overlay: Overlay){}
 
-   
+  popUpCard(index: number){
+    this.selectedItem = this.list[index]
+    const config = new OverlayConfig({
+      positionStrategy: this.overlay.position().global().centerHorizontally().centerVertically(),
+      hasBackdrop: true
+    })
+    const overlayRef = this.overlay.create(config);
 
- ngOnChanges(changes: SimpleChanges) {
-  if (changes['typeList']) {
-    this.updateList(changes['typeList'].currentValue);
+    overlayRef.attach(this.portal);
+    overlayRef.backdropClick().subscribe(()=> overlayRef.detach())
   }
-}
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['typeList']) {
+      this.updateList(changes['typeList'].currentValue);
+    }
+  }
+
 
   updateList(typeList: string){
     if(typeList === "burguer"){

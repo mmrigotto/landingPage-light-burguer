@@ -1,0 +1,33 @@
+<div class="full-card" *ngIf="!okCard">
+  <div class="image-card">
+      <img [src]=item.img alt="" class="photo-card">
+  </div>
+  <div class="text-card">
+      <div class="content">
+        <div class="title">
+          <p>{{item.nome}}</p>
+      </div>
+      <div class="description">
+          <p>{{item.descricao}}<p>
+      </div>
+      <div class="price">
+          <p>R${{item.preco}}</p>
+      </div>
+      </div>
+  </div>
+</div>
+
+<div class="full-card" *ngIf="okCard">
+  <div class="image-card">
+      <img src='../../../assets/check_circle_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg' alt="" class="photo-card">
+  </div>
+  <div class="text-card">
+      <div class="content">
+        <div class="title">
+          <p>Mensagem enviada com sucesso!</p>
+      </div>
+
+      </div>
+  </div>
+</div>
+

@@ -1,0 +1,74 @@
+.full-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px; /* Ajuste a largura do card para caber melhor */
+  height: 470px;
+  background-color: white;
+  gap: 8px;
+  border-radius: 24px;
+}
+
+.image-card {
+  border-radius: 24px;
+  height: 250px;
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-card {
+  width: auto;
+  height: 80%;
+  max-width: 80%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.text-card{
+  display: flex;
+  flex-direction: column;
+}
+
+.check-card{
+  color: yellow;
+}
+
+.avaliation{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.avaliation img.star {
+  margin-right: 8px;
+}
+.avaliation p{
+  margin-top: 6px;
+  text-align: center;
+  display: flex;
+  align-self: center;
+  font-weight: 500;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  padding-left: 5%;
+}
+.title{
+  font-size: 20px;
+  font-weight: 600;
+}
+.description{
+  font-size: 15px;
+  color: #8E8E8E;
+}
+.price{
+  font-size: 20px;
+  font-weight: 600;
+}

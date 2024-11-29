@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 2.5%;
-  padding-bottom: 4.5%;
-  padding-right: 4.3%;
+  padding-top: 5.3%;
+  padding-bottom: 8.1%;
+  padding-right: 5.3%;
   padding-left: 4.3%;
   width: 100%; /* Usa toda a largura disponível */
   max-width: 1380px; /* Define um limite de largura para o container principal */
