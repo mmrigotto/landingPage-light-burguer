@@ -17,7 +17,10 @@
   </div>
   <div class="column-itens">
     <div class="container-item">
-      <button (click)="popUpCard(2)"><img class="img-burguer" [src]=list[2].img alt="" ></button>
+
+      <button (click)="popUpCard(2)">
+        <img class="img-burguer" [src]=list[2].img alt="" >
+      </button>
       <div class="content-burger">
         <h1 class="title-burger">{{list[2].nome}}</h1>
         <p class="desc-burger">Clique para mais informações!</p>

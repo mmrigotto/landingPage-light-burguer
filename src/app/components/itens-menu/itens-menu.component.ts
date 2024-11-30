@@ -44,7 +44,7 @@ export class ItensMenuComponent {
 
         preco: 25.00,
 
-        img: "https://d3sn2rlrwxy0ce.cloudfront.net/whopper-thumb.png?mtime=20210916125149&focal=none"
+        img: "../../../assets/light house.png"
 
       },
 
@@ -56,7 +56,7 @@ export class ItensMenuComponent {
 
         preco: 28.00,
 
-        img: "https://d3sn2rlrwxy0ce.cloudfront.net/cheddar_dp_crispy.png?mtime=20231129102105&focal=none"
+        img: "../../../assets/double cheddar.png"
 
       },
 
@@ -68,7 +68,7 @@ export class ItensMenuComponent {
 
         preco: 16.00,
 
-        img: "../../../assets/Chicken-Jr-removebg-preview.png"
+        img: "../../../assets/chicken burguer.png"
 
       },
 
@@ -80,7 +80,7 @@ export class ItensMenuComponent {
 
         preco: 22.00,
 
-        img: "https://d3sn2rlrwxy0ce.cloudfront.net/whopper-de-plantas-thumb.png?mtime=20210916144441&focal=none"
+        img: "../../../assets/light veggie.png"
 
       },
     ]
@@ -95,7 +95,7 @@ export class ItensMenuComponent {
 
             preco: 7.00,
 
-            img: "https://mercantilatacado.vtexassets.com/arquivos/ids/168895-800-auto?v=638342834425200000&width=800&height=auto&aspect=true"
+            img: "../../../assets/coca.png"
 
           },
 
@@ -107,7 +107,7 @@ export class ItensMenuComponent {
 
             preco: 7.00,
 
-            img: "https://images.tcdn.com.br/img/img_prod/858764/refrigerante_coca_cola_zero_lata_350ml_c_12_365_1_20201021152513.jpg"
+            img: "../../../assets/coca-zero.png"
 
           },
 
@@ -119,7 +119,7 @@ export class ItensMenuComponent {
 
             preco: 7.00,
 
-            img: "https://hortifruti.com.br/media/catalog/product/cache/90a67334732b2408839e146d4f241496/1/0/104191.jpg "
+            img: "../../../assets/guarana.png"
 
           },
 
@@ -131,7 +131,7 @@ export class ItensMenuComponent {
 
             preco: 7.00,
 
-            img: "https://images.tcdn.com.br/img/img_prod/1115696/fanta_laranja_lata_350ml_6_und_39_1_ea7725d8f660b15a6ec56f3bf0af2b2b.jpg"
+            img: "../../../assets/fanta.png"
 
           },
 

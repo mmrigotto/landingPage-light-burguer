@@ -11,19 +11,27 @@
 .image-card {
   background-color: #FDD741;
   border-radius: 24px;
-  height: 250px;
+  width: 100%; /* Largura total da div */
+  height: 250px; /* Altura fixa */
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
+  overflow: hidden; /* Esconde partes da imagem que excederem o espaço */
 }
 
+
+
 .photo-card {
-  width: auto;
-  height: 100%;
-  max-width: 100%;
-  max-height: 200px;
-  object-fit: cover;
+  display: flex;
+  align-self: center;
+  min-width: 60%; /* Ocupa toda a largura disponível na div pai */
+  max-width: 90%;
+  min-height: 45%; /* Ocupa toda a altura disponível na div pai */
+  max-height: 99%;
+  object-fit: cover; /* Ajusta a imagem para preencher o espaço mantendo a proporção */
+  border-radius: 8px; /* Adiciona bordas arredondadas uniformes */
+  padding: 15%;
+  image-rendering: auto;
 }
 
 .text-card{
@@ -45,13 +53,14 @@
   text-align: center;
   display: flex;
   align-self: center;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .content{
   display: flex;
+  min-height: 135px;
   flex-direction: column;
-  gap: 4px;
+  justify-content: space-between;
 }
 .title{
   font-size: 20px;
@@ -60,6 +69,7 @@
 .description{
   font-size: 15px;
   color: #8E8E8E;
+  max-height: 72px;
 }
 .price{
   font-size: 20px;

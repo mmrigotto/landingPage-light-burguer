@@ -12,19 +12,33 @@
   gap: 150px;
 }
 
+button{
+  display: flex;
+  width: 100%; /* Largura total da div */
+  height: 150px; /* Altura fixa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .img-burguer{
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  display: flex;
+  align-self: center;
+  min-width:70%; /* Ocupa toda a largura disponível na div pai */
+  max-width: 70%;
+  min-height: 45%; /* Ocupa toda a altura disponível na div pai */
+  max-height: 80%;
+  object-fit: cover; /* Ajusta a imagem para preencher o espaço mantendo a proporção */
+  border-radius: 8px; /* Adiciona bordas arredondadas uniformes */
+  image-rendering: auto;
 }
 
 .itens-menu{
   display: flex;
   flex-direction: row;
   width: fit-content;
-  gap: 116px;
-  padding: 16px;
+  align-content: space-around;
+  width: 100%;
 }
 
 .column-itens{
@@ -38,13 +52,14 @@
   flex-direction: row;
   gap: 16px;
   align-items: center;
+  width: 100%;
 }
 
 
 .content-burguer{
   display: flex;
   flex-direction: row;
-
+  width: 100%;
 }
 
 .title-burger{
@@ -54,6 +69,7 @@
 
 .desc-burger{
   font-size: 20px;
+  min-width: 380px;
   font-weight: 600;
   color: #8E8E8E;
 }

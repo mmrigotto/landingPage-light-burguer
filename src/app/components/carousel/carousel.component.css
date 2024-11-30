@@ -7,7 +7,7 @@
   padding-right: 5.3%;
   padding-left: 4.3%;
   width: 100%; /* Usa toda a largura disponível */
-  max-width: 1380px; /* Define um limite de largura para o container principal */
+  max-width: 1680px; /* Define um limite de largura para o container principal */
   margin: 0 auto; /* Centraliza o conteúdo */
   overflow: hidden;
 }

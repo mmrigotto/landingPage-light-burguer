@@ -7,7 +7,7 @@ import { Component, ElementRef, HostListener, Input, ViewChild } from '@angular/
 })
 export class CarouselComponent {
   @Input() nameCarousel!: string;
-  
+  @Input() listItems!: any[]
 
   isDragging = false;
   startPosition = 0;
