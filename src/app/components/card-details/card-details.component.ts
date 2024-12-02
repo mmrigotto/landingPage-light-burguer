@@ -8,4 +8,9 @@ import { Component, Input } from '@angular/core';
 export class CardDetailsComponent {
   @Input() item!: any
   @Input() okCard: boolean = false
+  @Input() closeOverlay!: () => void;
+
+  close(){
+    this.closeOverlay()
+  }
 }

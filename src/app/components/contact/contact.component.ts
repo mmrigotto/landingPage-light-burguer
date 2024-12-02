@@ -10,6 +10,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactComponent {
   messageForm!: FormGroup;
+  overlayRef: any;
+
   sended: boolean = false
   @ViewChild(CdkPortal) portal!: CdkPortal
   constructor(private overlay: Overlay){}
@@ -19,7 +21,7 @@ export class ContactComponent {
     this.messageForm = new FormGroup({
       name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(50)]),
       email:  new FormControl('', [Validators.required, Validators.email]),
-      message: new FormControl('', [Validators.required, Validators.minLength(20), Validators.maxLength(300)])
+      message: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(300)])
     })
   }
   popUpCard(){
@@ -27,17 +29,23 @@ export class ContactComponent {
       positionStrategy: this.overlay.position().global().centerHorizontally().centerVertically(),
       hasBackdrop: true
     })
-    const overlayRef = this.overlay.create(config);
+    this.overlayRef = this.overlay.create(config);
 
-    overlayRef.attach(this.portal);
-    overlayRef.backdropClick().subscribe(()=> overlayRef.detach())
+    this.overlayRef.attach(this.portal);
+    this.overlayRef.backdropClick().subscribe(()=> this.overlayRef.detach())
   }
-
 
   submit(){
     if (this.messageForm.valid) {
       this.popUpCard()
       this.messageForm.reset();
+    }
+  }
+
+  closeOverlay() {
+    console.log("oi")
+    if (this.overlayRef) {
+      this.overlayRef.detach(); // Fechar o overlay
     }
   }
 

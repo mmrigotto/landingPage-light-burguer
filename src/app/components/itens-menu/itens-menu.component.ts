@@ -18,12 +18,13 @@ export class ItensMenuComponent {
     this.selectedItem = this.list[index]
     const config = new OverlayConfig({
       positionStrategy: this.overlay.position().global().centerHorizontally().centerVertically(),
-      hasBackdrop: true
+      hasBackdrop: true,
     })
     const overlayRef = this.overlay.create(config);
 
     overlayRef.attach(this.portal);
     overlayRef.backdropClick().subscribe(()=> overlayRef.detach())
+    
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -42,7 +43,7 @@ export class ItensMenuComponent {
 
         descricao: "Pão com gergelim, hambúrguer de carne bovina, alface, tomate, cebola, picles, ketchup e maionese.",
 
-        preco: 25.00,
+        preco: 233,
 
         img: "../../../assets/light house.png"
 
@@ -54,7 +55,7 @@ export class ItensMenuComponent {
 
         descricao: "Pão com gergelim, dois hambúrgueres de carne bovina, queijo cheddar cremoso e cebola caramelizada.",
 
-        preco: 28.00,
+        preco: 210,
 
         img: "../../../assets/double cheddar.png"
 
@@ -66,7 +67,7 @@ export class ItensMenuComponent {
 
         descricao: "Pão com gergelim, filé de frango empanado, alface, maionese.",
 
-        preco: 16.00,
+        preco: 150,
 
         img: "../../../assets/chicken burguer.png"
 
@@ -78,7 +79,7 @@ export class ItensMenuComponent {
 
         descricao: "Pão integral, 0% carne. Pão com gergelim, maionese, alface, tomate, cebola, ketchup, picles, cheddar fatiado e hambúrguer à base de proteína vegetal. ",
 
-        preco: 22.00,
+        preco: 190,
 
         img: "../../../assets/light veggie.png"
 
@@ -93,7 +94,7 @@ export class ItensMenuComponent {
 
             descricao: "Coca-Cola em sua versão lata de 350ml. A escolha perfeita para acompanhar qualquer refeição ou para momentos de descontração.",
 
-            preco: 7.00,
+            preco: 150,
 
             img: "../../../assets/coca.png"
 
@@ -105,7 +106,7 @@ export class ItensMenuComponent {
 
             descricao: "Coca-Cola Zero em sua versão lata de 350ml. A escolha perfeita para acompanhar qualquer refeição ou para momentos de descontração.",
 
-            preco: 7.00,
+            preco: 0,
 
             img: "../../../assets/coca-zero.png"
 
@@ -117,7 +118,7 @@ export class ItensMenuComponent {
 
             descricao: "Guaraná Antarctica em sua versão lata de 350ml. Com seu sabor icônico e refrescante, é a escolha perfeita para acompanhar qualquer refeição ou para momentos de descontração.",
 
-            preco: 7.00,
+            preco: 160,
 
             img: "../../../assets/guarana.png"
 
@@ -129,7 +130,7 @@ export class ItensMenuComponent {
 
             descricao: "Fanta Laranja em sua versão lata de 350ml. Feita com a combinação perfeita. Conhecida por sua pureza e frescor incomparáveis.",
 
-            preco: 7.00,
+            preco: 160,
 
             img: "../../../assets/fanta.png"
 
@@ -138,7 +139,62 @@ export class ItensMenuComponent {
         ]
 
 
-    }else if(typeList === "sobremesas"){
+    }else if(typeList === "acompanhamentos"){
+      this.list = [
+
+          {
+
+           nome: "Batata Cheddar",
+
+            descricao:"Nossa deliciosas e crocantes batatas com cheddar e bacon em cubos.",
+
+            preco: 400,
+
+            img: "../../../assets/fritas.png"
+
+          },
+
+          {
+
+           nome: "Chicken Nuggets",
+
+            descricao: "Pedaços de frango empanados, crocantes e com tempero suave. Com nossos molhos especiais, o seu pedido fica ainda mais gostoso.",
+
+            preco:  300,
+
+            img: "../../../assets/franguert.png"
+
+          },
+
+          {
+
+           nome: "Onion Rings",
+
+            descricao: "Cebolas cortadas em forma de anéis, empanadas com uma leve camada de farinha de rosca já temperada e fritas em óleo bem quente.",
+
+            preco: 250,
+
+            img: "../../../assets/onion.png"
+
+          },
+
+          {
+
+            nome: "Batata Frita",
+
+            descricao: "Nossas deliciosas e crocantes batatas, preparadas no ponto certo para agradar a todos.",
+
+            preco: 350,
+
+            img: "../../../assets/fritas-normal.png"
+
+          },
+
+        ]
+
+
+    }
+    else if(typeList === "sobremesas"){
       this.list = [
 
       {
@@ -147,9 +203,9 @@ export class ItensMenuComponent {
 
           descricao: "Mix de baunilha com calda sabor chocolate.",
 
-          preco: 10.00,
+          preco: 300,
 
-          img: "https://d3sn2rlrwxy0ce.cloudfront.net/Sundae-Chocolate-thumb.png?mtime=20210916155926&focal=none"
+          img: "../../../assets/sundae2.png"
 
         },
 
@@ -159,9 +215,9 @@ export class ItensMenuComponent {
 
           descricao: "O Milkshake pode ser sua sobremesa ou seu acompanhamento. Shake à base de baunilha com sabor baunilha.",
 
-          preco: 15.00,
+          preco: 500,
 
-          img: "https://d3sn2rlrwxy0ce.cloudfront.net/Nova-Embalagem_Shake-Baunilha_Externa.png?mtime=20240604103843&focal=none"
+          img: "../../../assets/baunilha.png"
 
         },
 
@@ -171,9 +227,9 @@ export class ItensMenuComponent {
 
           descricao: "O Milkshake pode ser sua sobremesa ou seu acompanhamento. Shake à base de baunilha com sabor morango e calda de morango.",
 
-          preco: 15.00,
+          preco: 500,
 
-          img: "https://d3sn2rlrwxy0ce.cloudfront.net/Nova-Embalagem_Shake-Morango_Externa.png?mtime=20240604104134&focal=none"
+          img: "../../../assets/milkshake.png"
 
         },
 
@@ -183,35 +239,13 @@ export class ItensMenuComponent {
 
           descricao: "Deliciosa sobremesa servida numa casquinha muito crocante, sabor Baunilha.",
 
-          preco: 4.00,
+          preco: 200,
 
-          img: "https://d3sn2rlrwxy0ce.cloudfront.net/Casquinha-Baunilha-thumb.png?mtime=20210916162214&focal=none"
-
-        },
-
-      {
-
-         nome: "Casquinha Mista",
-
-          descricao: "Deliciosa sobremesa servida numa casquinha muuuito crocante, massa mista de Baunilha e Doce de Leite.",
-
-          preco: 4.00,
-
-          img: "https://d3sn2rlrwxy0ce.cloudfront.net/Casquinha-Mista-thumb.png?mtime=20210916162351&focal=none"
+          img: "../../../assets/sorvete.png"
 
         },
 
-      {
 
-         nome: "Milkshake de Chocolate",
-
-          descricao: "O MilkShake pode ser sua sobremesa ou seu acompanhamento. Milkshake à base de baunilha com sabor chocolate e calda de chocolate.",
-
-          preco: 15.00,
-
-          img: "https://d3sn2rlrwxy0ce.cloudfront.net/Nova-Embalagem_Shake-Chocolate_Externa.png?mtime=20240604104016&focal=none"
-
-        },
 
 
 

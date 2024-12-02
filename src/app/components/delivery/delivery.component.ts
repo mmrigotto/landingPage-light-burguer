@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-delivery',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./delivery.component.css']
 })
 export class DeliveryComponent {
+  constructor(private router: Router){}
 
+  navigateToDownload(){
+    this.router.navigate(['/download'])
+  }
 }

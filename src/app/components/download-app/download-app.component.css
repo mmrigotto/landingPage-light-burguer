@@ -1,0 +1,50 @@
+.download{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   height: 805px;
+   justify-content: flex-end;
+}
+
+.row-img-title{
+    display: flex;
+    flex-direction: row;
+}
+
+.images-download {
+    position: relative; /* Adiciona um contexto de posicionamento para os elementos filhos */
+    width: 100%; /* ajuste para o tamanho desejado */
+    height: 90%;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/wave 2.png');
+    display: flex;
+    justify-content: center; /* Caso precise centralizar o conteúdo */
+    align-items: center; /* Caso precise alinhar o conteúdo no centro */
+    background-position: bottom center; 
+  }
+  
+  .overlay {
+    position: absolute; /* Agora a imagem pode ser posicionada de forma absoluta */
+    bottom: 0; /* Posiciona no fim da div pai, alinhada ao fundo */
+    right: 0; /* Posiciona no fim da div pai, alinhada à direita */
+    width: 43%; /* Ajuste o tamanho conforme necessário */
+    height: 110%; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .title{
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+
+h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+p{
+    text-align: center;
+    font-size: 32px;
+    width: 45%;
+}

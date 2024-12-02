@@ -12,6 +12,8 @@
   gap: 150px;
 }
 
+
+
 button{
   display: flex;
   width: 100%; /* Largura total da div */
@@ -24,13 +26,14 @@ button{
 .img-burguer{
   display: flex;
   align-self: center;
-  min-width:70%; /* Ocupa toda a largura disponível na div pai */
-  max-width: 70%;
-  min-height: 45%; /* Ocupa toda a altura disponível na div pai */
-  max-height: 80%;
+  min-width: 80%; /* Ocupa toda a largura disponível na div pai */
+  max-width: 80%;
+  min-height: 70%; /* Ocupa toda a altura disponível na div pai */
+  max-height: 95%;
   object-fit: cover; /* Ajusta a imagem para preencher o espaço mantendo a proporção */
   border-radius: 8px; /* Adiciona bordas arredondadas uniformes */
   image-rendering: auto;
+  padding: 5%;
 }
 
 .itens-menu{

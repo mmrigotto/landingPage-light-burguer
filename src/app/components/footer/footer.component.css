@@ -39,14 +39,15 @@ footer {
   padding: 4%;
 }
 .icon-burguer {
-  width: 50%; /* O tamanho do ícone será 10% da largura da tela */
+  width: 10vw; /* Tamanho relativo em relação à largura da tela */
   height: auto; /* Mantém a proporção */
-  object-fit: cover; /* Garante que a imagem preencha o espaço definido */
+  object-fit: contain; /* Garante que a imagem não distorça */
+  max-width: 250px; /* Define um limite máximo de tamanho */
 }
 .app{
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 20%;
   gap: 9%;
 }
 .title-app {

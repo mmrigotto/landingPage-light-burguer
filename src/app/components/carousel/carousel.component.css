@@ -7,7 +7,7 @@
   padding-right: 5.3%;
   padding-left: 4.3%;
   width: 100%; /* Usa toda a largura disponível */
-  max-width: 1680px; /* Define um limite de largura para o container principal */
+  max-width: 4580px; /* Define um limite de largura para o container principal */
   margin: 0 auto; /* Centraliza o conteúdo */
   overflow: hidden;
 }
@@ -16,7 +16,7 @@
   gap: 32px;
   overflow-x: auto;   /* Permite rolagem horizontal */
   cursor: grab;
-  max-width: 200vh;
+  max-width: 190vh;
 }
 
 .row-cards::-webkit-scrollbar {

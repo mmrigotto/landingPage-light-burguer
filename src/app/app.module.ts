@@ -18,6 +18,9 @@ import { AvaliationsComponent } from './components/avaliations/avaliations.compo
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { DownloadAppComponent } from './components/download-app/download-app.component';
+import { MainPageComponent } from './components/main-page/main-page.component'; 
 
 @NgModule({
   declarations: [
@@ -35,12 +38,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     AvaliationsComponent,
     ContactComponent,
     FooterComponent,
+    DownloadAppComponent,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule,
     OverlayModule,
     PortalModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      {'path': '', component: MainPageComponent},
+      { 'path': 'download', component: DownloadAppComponent }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
