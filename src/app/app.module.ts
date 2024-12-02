@@ -20,7 +20,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { DownloadAppComponent } from './components/download-app/download-app.component';
-import { MainPageComponent } from './components/main-page/main-page.component'; 
+import { MainPageComponent } from './components/main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +48,9 @@ import { MainPageComponent } from './components/main-page/main-page.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       {'path': '', component: MainPageComponent},
-      { 'path': 'download', component: DownloadAppComponent }
+      { 'path': 'download', component: DownloadAppComponent },
+      { path: '', redirectTo: '/home', pathMatch: 'full' },
+
     ])
   ],
   providers: [],
