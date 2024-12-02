@@ -1,7 +1,7 @@
 <div [ngClass]="loadingState" class="loading" *ngIf="!dataLoaded">
-    <img class="logo" src="../assets/burguer-logo.png" alt="">
+    <img class="logo" src="assets/burguer-logo.png" alt="">
   </div>
-  
+
   <div class="home" *ngIf="dataLoaded">
     <app-header></app-header>
     <div id="home">
@@ -12,7 +12,7 @@
       <app-menu-popular></app-menu-popular>
     </div>
     <app-carousel [listItems]="promocoes" [nameCarousel]="'Promoções Delivery'"></app-carousel>
-  
+
     <div id="delivery">
       <app-delivery></app-delivery>
     </div>

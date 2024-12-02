@@ -24,7 +24,7 @@ export class ItensMenuComponent {
 
     overlayRef.attach(this.portal);
     overlayRef.backdropClick().subscribe(()=> overlayRef.detach())
-    
+
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -45,7 +45,7 @@ export class ItensMenuComponent {
 
         preco: 233,
 
-        img: "../../../assets/light house.png"
+        img: "assets/light house.png"
 
       },
 
@@ -57,7 +57,7 @@ export class ItensMenuComponent {
 
         preco: 210,
 
-        img: "../../../assets/double cheddar.png"
+        img: "assets/double cheddar.png"
 
       },
 
@@ -69,7 +69,7 @@ export class ItensMenuComponent {
 
         preco: 150,
 
-        img: "../../../assets/chicken burguer.png"
+        img: "assets/chicken burguer.png"
 
       },
 
@@ -81,7 +81,7 @@ export class ItensMenuComponent {
 
         preco: 190,
 
-        img: "../../../assets/light veggie.png"
+        img: "assets/light veggie.png"
 
       },
     ]
@@ -96,7 +96,7 @@ export class ItensMenuComponent {
 
             preco: 150,
 
-            img: "../../../assets/coca.png"
+            img: "assets/coca.png"
 
           },
 
@@ -108,7 +108,7 @@ export class ItensMenuComponent {
 
             preco: 0,
 
-            img: "../../../assets/coca-zero.png"
+            img: "assets/coca-zero.png"
 
           },
 
@@ -120,7 +120,7 @@ export class ItensMenuComponent {
 
             preco: 160,
 
-            img: "../../../assets/guarana.png"
+            img: "assets/guarana.png"
 
           },
 
@@ -132,7 +132,7 @@ export class ItensMenuComponent {
 
             preco: 160,
 
-            img: "../../../assets/fanta.png"
+            img: "assets/fanta.png"
 
           },
 
@@ -150,7 +150,7 @@ export class ItensMenuComponent {
 
             preco: 400,
 
-            img: "../../../assets/fritas.png"
+            img: "assets/fritas.png"
 
           },
 
@@ -162,7 +162,7 @@ export class ItensMenuComponent {
 
             preco:  300,
 
-            img: "../../../assets/franguert.png"
+            img: "assets/franguert.png"
 
           },
 
@@ -174,7 +174,7 @@ export class ItensMenuComponent {
 
             preco: 250,
 
-            img: "../../../assets/onion.png"
+            img: "assets/onion.png"
 
           },
 
@@ -186,7 +186,7 @@ export class ItensMenuComponent {
 
             preco: 350,
 
-            img: "../../../assets/fritas-normal.png"
+            img: "assets/fritas-normal.png"
 
           },
 
@@ -205,7 +205,7 @@ export class ItensMenuComponent {
 
           preco: 300,
 
-          img: "../../../assets/sundae2.png"
+          img: "assets/sundae2.png"
 
         },
 
@@ -217,7 +217,7 @@ export class ItensMenuComponent {
 
           preco: 500,
 
-          img: "../../../assets/baunilha.png"
+          img: "assets/baunilha.png"
 
         },
 
@@ -229,7 +229,7 @@ export class ItensMenuComponent {
 
           preco: 500,
 
-          img: "../../../assets/milkshake.png"
+          img: "assets/milkshake.png"
 
         },
 
@@ -241,7 +241,7 @@ export class ItensMenuComponent {
 
           preco: 200,
 
-          img: "../../../assets/sorvete.png"
+          img: "assets/sorvete.png"
 
         },
 
