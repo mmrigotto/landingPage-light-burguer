@@ -1,0 +1,33 @@
+.vendidos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 5.3%;
+  padding-bottom: 8.1%;
+  padding-right: 5.3%;
+  padding-left: 4.3%;
+  width: 100%; /* Usa toda a largura disponível */
+  max-width: 4580px; /* Define um limite de largura para o container principal */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  overflow: hidden;
+}
+.row-cards {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;   /* Permite rolagem horizontal */
+  cursor: grab;
+  max-width: 190vh;
+}
+
+.row-cards::-webkit-scrollbar {
+  display: none;      /* Remove a barra de rolagem visual */
+}
+.row-cards:active {
+  cursor: grabbing;
+}
+
+.mais-vendidos h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}

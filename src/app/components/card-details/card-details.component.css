@@ -1,0 +1,209 @@
+.full-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%; /* Largura ajustável conforme o tamanho da tela */
+  max-width: 400px; /* Largura máxima para o card */
+  height: auto; /* Altura automática para o card */
+  background-color: white;
+  gap: 8px;
+  border-radius: 24px;
+  padding: 16px;
+  box-sizing: border-box; /* Garante que o padding seja incluído na largura e altura */
+}
+
+.image-card {
+  border-radius: 24px;
+  width: 100%; /* A largura da imagem será 100% do card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-card {
+  min-width: 50%;
+  max-width: 100%; /* Nunca ultrapassa a largura do contêiner */
+  max-height: 300px; /* Limita a altura máxima da imagem */
+  height: auto; /* A altura é ajustada proporcionalmente */
+  padding: 10%;
+}
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.check-card {
+  color: yellow;
+}
+
+.avaliation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.avaliation img.star {
+  margin-right: 8px;
+}
+
+.avaliation p {
+  margin-top: 6px;
+  text-align: center;
+  display: flex;
+  align-self: center;
+  font-weight: 500;
+}
+
+
+
+.card-message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  align-content: space-between;
+ gap: 24px;
+  min-width: 720px; /* Largura ajustável conforme o tamanho da tela */
+  height: auto; /* Altura automática para o card */
+  background-color: white;
+  border-radius: 24px;
+  padding: 10%;
+  box-sizing: border-box; /* Garante que o padding seja incluído na largura e altura */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 5%;
+}
+
+.content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 15px;
+  color: #8E8E8E;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ok-card {
+  min-width: 50%;
+  max-width: 100%; /* Nunca ultrapassa a largura do contêiner */
+  max-height: 300px; /* Limita a altura máxima da imagem */
+  height: auto; /* A altura é ajustada proporcionalmente */
+}
+
+.ok-title-div{
+  width: 75%; /* Garantir que o título ocupe toda a largura disponível */
+  justify-content: center;
+}
+
+.ok-title{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin: auto; /* Remover qualquer margem que possa causar o desalinhamento */
+}
+
+.text-card-ok{
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+button{
+  background-color: #FDD741;
+  width: 50%;
+  border-radius: 12px;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+#check-group {
+  animation: 0.32s ease-in-out 1.03s check-group;
+  transform-origin: center;
+}
+
+#check-group #check {
+  animation: 0.34s cubic-bezier(0.65, 0, 1, 1) 0.8s forwards check;
+  stroke-dasharray: 0, 75px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#check-group #outline {
+  animation: 0.38s ease-in outline;
+  transform: rotate(0deg);
+  transform-origin: center;
+}
+
+#check-group #white-circle {
+  animation: 0.35s ease-in 0.35s forwards circle;
+  transform: none;
+  transform-origin: center;
+}
+
+@keyframes outline {
+from {
+  stroke-dasharray: 0, 345.576px;
+}
+to {
+  stroke-dasharray: 345.576px, 345.576px;
+}
+}
+@keyframes circle {
+from {
+  transform: scale(1);
+}
+to {
+  transform: scale(0);
+}
+}
+@keyframes check {
+from {
+  stroke-dasharray: 0, 75px;
+}
+to {
+  stroke-dasharray: 75px, 75px;
+}
+}
+@keyframes check-group {
+from {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.09);
+}
+to {
+  transform: scale(1);
+}
+}

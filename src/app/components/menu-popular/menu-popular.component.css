@@ -1,0 +1,55 @@
+.menu-popular{
+  background-color: #FAF6F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontal */
+  padding: 6.5%;
+  gap: 100px;
+}
+
+.header-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.icon-burguer{
+  width: 100px;
+  height: 100px;
+}
+#selected-burguer{
+  width: 90px;
+  height: 90px;
+}
+
+.titles-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.sub-title{
+  font-size: 32px;
+  font-weight: 600;
+  color: #8E8E8E;
+}
+
+.main-title{
+  color: #FDD741;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.icons-menu{
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+}
+
+.icons-img {
+  width: 80px;
+  height: 80px;
+}
+
+

@@ -1,0 +1,115 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import '@angular/cdk/overlay-prebuilt.css';
+
+
+
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+body {
+  font-family: 'Poppins';
+
+
+
+  line-height: 1.5;
+  text-align: left;
+  background-color: #fff;
+  color: #000;
+
+}
+
+
+input,
+button,
+select,
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0;
+  text-align: left;
+}
+
+
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+
+fieldset,
+button,
+input,
+select,
+textarea {
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}

@@ -1,0 +1,15 @@
+<div class="vendidos">
+  <div class="mais-vendidos">
+      <h1>{{nameCarousel}}</h1>
+  </div>
+
+  <div class="row-cards" #carousel>
+    <div *ngFor="let item of listItems">
+      <app-cards [avaliation]="item.avaliation"
+      [title]="item.title"
+      [description]="item.description"
+      [imageSrc]="item.imageSrc"
+      [price]="item.price"></app-cards>
+    </div>
+  </div>
+</div>

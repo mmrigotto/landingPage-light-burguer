@@ -1,0 +1,41 @@
+<form (ngSubmit)="submit()" class="contact-section" [formGroup]="messageForm" #formDir="ngForm">
+  <div class="contact-title">
+    <h1 class="subtitle">Fale conosco</h1>
+    <h1 class="title">CONTATO</h1>
+  </div>
+  <div class="contact-content">
+    <div class="img-contact">
+      <img src="assets/ImagemCadastro.svg" alt="" class="girl-jornal">
+    </div>
+    <div class="forms">
+      <div class="forms-fill">
+        <h1 class="params">Nome:</h1>
+        <input type="text" class="form" formControlName="name" placeholder="Insira seu nome" required>
+        <div *ngIf="getName().invalid && getName().touched" class="error-message">
+          <h1>Nome inválido</h1>
+        </div>
+      </div>
+      <div class="forms-fill">
+        <h1 class="params">Email:</h1>
+        <input type="text" class="form "  placeholder="Insira seu Email"  formControlName="email" required>
+        <div *ngIf="getEmail().invalid && getEmail().touched" class="error-message">
+          <h1>Email inválido</h1>
+        </div>
+      </div>
+      <div id="message_text">
+        <div class="forms-fill">
+          <h1 class="params">Mensagem:</h1>
+          <textarea type="text" id="text_input" rows="5" cols="5" formControlName="message" placeholder="Escreva seu feedback para nós!" required></textarea>
+          <div *ngIf="getMessage().invalid && getMessage().touched" class="error-message">
+            <h1>Mensagem inválida</h1>
+          </div>
+        </div>
+        <input type="submit" class="send_button" value="Enviar">
+      </div>
+    </div>
+  </div>
+</form>
+
+<ng-template cdkPortal>
+  <app-card-details [okCard]="true" [closeOverlay]="closeOverlay.bind(this)"></app-card-details>
+</ng-template>

@@ -1,0 +1,41 @@
+<div class="itens-menu" *ngIf="list.length >= 4">
+  <div class="column-itens">
+    <div class="container-item">
+      <button (click)="popUpCard(0)"><img class="img-burguer" [src]=list[0].img alt=""></button>
+      <div class="content-burger">
+        <h1 class="title-burger">{{list[0].nome}}</h1>
+        <p class="desc-burger">Clique para mais informações!</p>
+      </div>
+    </div>
+      <div class="container-item">
+        <button (click)="popUpCard(1)"><img class="img-burguer" [src]=list[1].img alt=""></button>
+        <div class="content-burger">
+          <h1 class="title-burger">{{list[1].nome}}</h1>
+          <p class="desc-burger">Clique para mais informações!</p>
+        </div>
+    </div>
+  </div>
+  <div class="column-itens">
+    <div class="container-item">
+
+      <button (click)="popUpCard(2)">
+        <img class="img-burguer" [src]=list[2].img alt="" >
+      </button>
+      <div class="content-burger">
+        <h1 class="title-burger">{{list[2].nome}}</h1>
+        <p class="desc-burger">Clique para mais informações!</p>
+      </div>
+    </div>
+      <div class="container-item">
+        <button (click)="popUpCard(3)"><img class="img-burguer" [src]=list[3].img alt="" ></button>
+        <div class="content-burger">
+          <h1 class="title-burger">{{list[3].nome}}</h1>
+          <p class="desc-burger">Clique para mais informações!</p>
+        </div>
+    </div>
+  </div>
+  </div>
+
+<ng-template cdkPortal>
+  <app-card-details [item]="selectedItem"></app-card-details>
+</ng-template>

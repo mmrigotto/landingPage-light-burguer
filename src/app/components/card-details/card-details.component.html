@@ -1,0 +1,79 @@
+<div class="full-card" *ngIf="!okCard">
+  <div class="image-card">
+      <img [src]=item.img alt="" class="photo-card">
+  </div>
+  <div class="text-card">
+      <div class="content">
+        <div class="title">
+          <p>{{item.nome}}</p>
+      </div>
+      <div class="price">
+        <p>{{item.preco}} Kcal</p>
+    </div>
+      <div class="description">
+          <p>{{item.descricao}}<p>
+      </div>
+      
+      </div>
+  </div>
+</div>
+
+<div class="card-message" *ngIf="okCard">
+  <div class="image-card">
+    <svg
+    width="200px"
+    height="200px"
+    viewBox="0 0 133 133"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+    <g
+        id="check-group"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+    >
+            <circle
+            id="filled-circle"
+            fill="#FDD741"
+            cx="66.5"
+            cy="66.5"
+            r="54.5"
+        />
+        <circle
+            id="white-circle"
+            fill="#FFFFFF"
+            cx="66.5"
+            cy="66.5"
+            r="55.5"
+        />
+        <circle
+            id="outline"
+            stroke="#FDD741"
+            stroke-width="4"
+            cx="66.5"
+            cy="66.5"
+            r="54.5"
+        />
+        <polyline
+            id="check"
+            stroke="#FFFFFF"
+            stroke-width="5.5"
+            points="41 70 56 85 92 49"
+        />
+    </g>
+</svg>
+  </div>
+  <div class="text-card-ok">
+      <div class="content-center">
+        <div class="ok-title-div">
+          <h1 class="ok-title">Mensagem enviada com Sucesso!</h1>
+        </div>
+        <button (click)="close()">Ok</button>
+
+      </div>
+  </div>
+</div>
+

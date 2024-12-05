@@ -1,0 +1,40 @@
+.icon-image{
+    width: 44% ;
+    height: 38%;
+    align-self: center;
+    display: flex;
+}
+
+
+.image-circle{
+
+    background-color:#FAF6F3 ;
+    border-radius: 100%;
+    width: 86%;
+    height: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.mainicon{
+    width:124px;
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p{
+    color:#707070;
+    font-weight:600;
+    font-size: clamp(14px, 1vw, 16px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

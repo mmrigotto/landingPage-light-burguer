@@ -1,0 +1,26 @@
+<div [ngClass]="loadingState" class="loading" *ngIf="!dataLoaded">
+    <img class="logo" src="assets/burguer-logo.png" alt="">
+  </div>
+
+  <div class="home" *ngIf="dataLoaded">
+    <app-header></app-header>
+    <div id="home">
+      <app-home></app-home>
+    </div>
+    <app-carousel [listItems]="maisVendidos" [nameCarousel]="'Mais vendidos'"></app-carousel>
+    <div id="menu">
+      <app-menu-popular></app-menu-popular>
+    </div>
+    <app-carousel [listItems]="promocoes" [nameCarousel]="'Promoções Delivery'"></app-carousel>
+
+    <div id="delivery">
+      <app-delivery></app-delivery>
+    </div>
+    <div id="avaliacoes">
+      <app-avaliations></app-avaliations>
+    </div>
+    <div id="contato">
+      <app-contact></app-contact>
+      <app-footer></app-footer>
+    </div>
+  </div>

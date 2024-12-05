@@ -1,0 +1,169 @@
+.avaliations{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding-top: 7.5%;
+  padding-bottom: 9.5%;
+}
+
+.avaliations-title{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.subtitle{
+  font-size: 30px;
+  color: #8E8E8E;
+  font-weight: 600;
+}
+.title{
+  font-size: 80px;
+  color: #FDD741;
+  font-weight: 700;
+}
+
+.avaliations-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#carousel{
+  display: flex;
+  align-items: center;
+}
+
+.avaliation{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #FAF6F3;
+  align-content: flex-start;
+  width: 50%;
+  padding: 2%;
+  height: 20%;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  border-radius: 24px;
+}
+
+.carousel-item {
+  flex: 0 0 100%; /* Ocupa 100% do contêiner */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.carousel-item-next.active,
+.carousel-item-prev.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.person-data{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.person{
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+.name-person{
+  font-weight: 600;
+  font-size: 20px;
+}
+.date{
+  color: #8E8E8E;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icon-person{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.stars{
+  width: 35%;
+  display: flex;
+  align-self: flex-start;
+  object-fit: contain;
+
+}
+.text-avaliation{
+  color: #3F3D56;
+  font-size: 18px;
+}
+
+
+#carouselExample{
+  width: 92%;
+}
+
+
+
+.carousel-item-active{
+  display: flex;
+  align-items: center;
+}
+
+.carousel-avaliations{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  gap: 24px;
+}
+
+.carousel-control-prev-icon{
+ background-color: transparent;
+ color:black;
+ font-size: 40px;
+ background-image: none;
+}
+
+.carousel-control-next-icon{
+  background-color: transparent;
+  color:black;
+  font-size: 40px;
+  background-image: none;
+}
+
+.seta{
+  width: 20px;
+}
+
+.row-icons{
+  width: 87%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
